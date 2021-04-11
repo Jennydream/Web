@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    title Welcome SUGANG
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    script(src='/javascript/script.js')
+    link(rel='stylesheet', type='text/css', href='/css/style.css')
+  body  
+
+    #sugang_ver.row 
+      #sugang_verNav
+        #homeContent 
+        center    
+          a(href='/gls#') 
+            img(src='/image/logo.jpg' style='width:90%' class="img-thumbnail") 
+        center
+          table.tablee.table-bordered.table-hover
+            thead
+              tr(style= 'font-size:15px;')                 
+                th( style= 'width:100%, font-size:10px, height: 100%;') Name
+                th( class= "bg-white" border = '1' style= 'width:50%') #{namee}    
+              tr(style= 'font-size:15px;')
+                th Student ID
+                th(class= "bg-white") #{student_id}
+              tr(style= 'font-size:15px;')
+                th Allowable Credits
+                th(class= "bg-white") #{allow}      
+              tr(style= 'font-size:15px;')
+                th Major
+                th(class= "bg-white") #{departmentt} 
+            
+      #sugang_content
+        img(src='/image/sugang_head.jpg', style='width:110%' height= 50)
+
+        h3 Registerd Courses
+        table.table.table-bordered.table-hover
+          thead
+            thead
+            th Class ID
+            th Class Name
+            th Professor
+            th Credit
+            th Maximum Student
+            th Now Registered Students
+            th Put in Bag 
+          tbody       
+           
+            -for(var i=0; i<clength; i++)             
+              if (carry[i].sugangvalue == 4)
+               
+                td #{carry[i].class}
+                td #{carry[i].cname}
+                td #{carry[i].profe}
+                td #{carry[i].credit}
+                td #{carry[i].Mstudent}                              
+                td #{carry[i].regi_student}                          
+                td 
+                  center
+                    button.CancleBtn.btn.btn-success.btn-lg(type='button', style='position',svalue=carry[i].class) Cancle
+                tr 
+        h3 Course Bag
+        table.table.table-bordered.table-hover(id ='bcourse') 
+          thead
+            th Class ID
+            th Class Name
+            th ProfessorStudents
+            th Credit
+            th Maximum Student
+            th Now Registered Students 
+            th Put out from Bag         
+          tbody         
+            -for(var i=0; i<clength; i++)           
+              if (carry[i].bagvalue == 1)
+                td #{carry[i].class}
+                td #{carry[i].cname}
+                td #{carry[i].profe}
+                td #{carry[i].credit}
+                td #{carry[i].Mstudent}                                     
+                td #{carry[i].regi_student}                             
+                td 
+                  center
+                    button.RegisterBtn.btn.btn-info.btn-lg(type='button', style='position',regvalue=carry[i].class) Register
+                tr 
+
+
+
+        
