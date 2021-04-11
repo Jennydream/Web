@@ -1,0 +1,149 @@
+h1
+{
+	background-image:url("../image/academics.jpg");
+	font-size:100px;
+	color:white;
+	text-align:center;
+	vertical-align:center;
+
+	margin-top:120px;
+
+}
+
+h2
+{
+	font-size:50px;
+}
+
+h3
+{
+	font-size:30px;
+}
+
+h4
+{
+	font-size:25px;
+	color:#2962e5;
+	font-style:italic;
+
+	margin-top: 120px;
+}
+
+p
+{
+	font-size:18px;
+	margin : 10px;
+}
+table
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	margin:20px;
+	text-align: center;
+}
+
+td
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#dddddd; 
+	font-size:20px;
+	padding:5px;
+
+}
+
+
+
+body{
+	margin: 20px;
+	margin-bottom: 120px;
+}
+
+.index_body{
+	margin: 20px;
+	margin-bottom: 120px;
+}
+
+#my_nav{
+	background-color: white;
+}
+
+#my_buttonNav{
+	background-color: white;
+
+}
+
+#login_popup{
+	padding-bottom: 5em;
+	display: none;
+	text-align: center;
+}
+
+#gls_row{
+	margin:0px;
+	padding:0px;
+}
+
+#gls_ver{
+	height:88vh;
+	margin-top:0px;
+	margin-left:10px;
+}
+
+#gls_verNav{
+	width:20%;
+	border-right-style:solid;
+	border-right-width:5px;
+	border-right-color:#0066CC;
+}
+
+#gls_navBar{
+	margin:10px;
+}
+
+#gls_content{
+	width:70%;
+	margin:10px;
+}
+.td_head{
+	font-weight:bold;
+}
+
+
+#register_popup{
+	padding-bottom: 5em;
+	display: none;
+	text-align: center;
+}
+
+#sugang_info{
+	width :95%;
+	margin:10px;
+}
+#sugang_ver{
+	height:100vh;
+	margin-top:0px;
+	margin-left:10px;
+}
+
+#sugang_verNav{
+	width:20%;
+	border-right-style:solid;
+	border-right-width:5px;
+	border-right-color:	rgb(128,128,128);
+}
+.tablee{
+	
+	width: 95%;
+	height: 50%;
+	margin:7px;
+	text-align: center;
+	background-color: #59b300;
+	font-size: 10px;
+
+}
+#sugang_content{
+	width:70%;
+	margin:10px;
+}
